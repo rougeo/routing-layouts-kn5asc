@@ -1,0 +1,5 @@
+<ng-container [ngSwitch]="layout">
+  <!-- Alternativerly use the main layout as the default switch case -->
+	<app-main-layout *ngSwitchCase="Layouts.Main"></app-main-layout>
+	<app-footer-only-layout *ngSwitchCase="Layouts.FooterOnly"></app-footer-only-layout>
+</ng-container>
